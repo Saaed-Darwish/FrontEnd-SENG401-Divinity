@@ -36,7 +36,7 @@ const Register = () => {
         };
 
         try {
-            const response = await fetch('/Register', {
+            const response = await fetch('divinity-java-backend-production.up.railway.app/Register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

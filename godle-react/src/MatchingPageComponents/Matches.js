@@ -46,7 +46,7 @@ const Matches = ({ user, matchedDeities, setDeity }) => {
   const handleswiperight = (card) => {
     setLoadingMatches(true);
     if (user !== undefined) {
-      fetch('/UserMatched', {
+      fetch('divinity-java-backend-production.up.railway.app/UserMatched', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

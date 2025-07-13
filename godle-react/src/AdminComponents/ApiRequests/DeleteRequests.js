@@ -5,7 +5,7 @@ export const deleteDeity = async (DeityName) => {
     }
 
     try {
-        fetch('/Admin/Deities', {
+        fetch('divinity-java-backend-production.up.railway.app/Admin/Deities', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ export const deleteUser = async (Email) => {
     }
 
     try {
-        fetch('/Admin/Users', {
+        fetch('divinity-java-backend-production.up.railway.app/Admin/Users', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -76,7 +76,7 @@ export const deleteForum = async (Email, Date) => {
     }
 
     try {
-        fetch('/Admin/Forum', {
+        fetch('divinity-java-backend-production.up.railway.app/Admin/Forum', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
