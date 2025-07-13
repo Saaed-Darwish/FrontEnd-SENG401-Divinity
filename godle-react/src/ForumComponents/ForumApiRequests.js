@@ -1,6 +1,6 @@
 export const fetchThreads = async (email) => {
     try {
-        const response = await fetch(`divinity-java-backend-production.up.railway.app/Forum?email=${email}`);
+        const response = await fetch(`https://divinity-java-backend-production.up.railway.app/Forum?email=${email}`);
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
@@ -26,7 +26,7 @@ export const postThread = async (email, title, body) => {
       };
       
     try {
-        fetch('divinity-java-backend-production.up.railway.app/Forum', {
+        fetch('https://divinity-java-backend-production.up.railway.app/Forum', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ export const deleteThread = async (email, date) => {
       };
       
     try {
-        fetch('divinity-java-backend-production.up.railway.app/Forum', {
+        fetch('https://divinity-java-backend-production.up.railway.app/Forum', {
             method: 'Delete',
             headers: {
                 'Content-Type': 'application/json'

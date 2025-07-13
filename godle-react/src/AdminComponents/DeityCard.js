@@ -199,7 +199,7 @@ function DeityCard({ deity, setModalOpen, fetchJsonData }) {
       ZEN: Zen,
     };
     try {
-      fetch("divinity-java-backend-production.up.railway.app/Admin/Deities", {
+      fetch("https://divinity-java-backend-production.up.railway.app/Admin/Deities", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

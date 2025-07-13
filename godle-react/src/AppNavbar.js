@@ -47,7 +47,7 @@ const AppNavbar = ({ user, setUser, setDeity, deity, setIsAdmin, isAdmin }) => {
         password: password,
       };
 
-      let response = await fetch('divinity-java-backend-production.up.railway.app/Login', {
+      let response = await fetch('https://divinity-java-backend-production.up.railway.app/Login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ const AppNavbar = ({ user, setUser, setDeity, deity, setIsAdmin, isAdmin }) => {
         navigate("/");
       }
 
-      response = await fetch('divinity-java-backend-production.up.railway.app/IsUserMatched', {
+      response = await fetch('https://divinity-java-backend-production.up.railway.app/IsUserMatched', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

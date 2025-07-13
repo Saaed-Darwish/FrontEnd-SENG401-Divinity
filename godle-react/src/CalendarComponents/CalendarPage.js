@@ -23,7 +23,7 @@ const CalendarPage = ({ deity, user }) => {
       };
 
       try {
-        const response = await fetch('divinity-java-backend-production.up.railway.app/Calendar', {
+        const response = await fetch('https://divinity-java-backend-production.up.railway.app/Calendar', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

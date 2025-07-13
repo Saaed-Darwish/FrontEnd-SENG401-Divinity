@@ -67,7 +67,7 @@ const Quiz = ({ tosButtonClicked, settosButtonClicked, user, setMatchedDeities }
         }
 
         try {
-            const response = await fetch('divinity-java-backend-production.up.railway.app/SubmitAttributes', {
+            const response = await fetch('https://divinity-java-backend-production.up.railway.app/SubmitAttributes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
