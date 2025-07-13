@@ -19,7 +19,7 @@ export const putDeity = async (Zen,Organization,Squeamishness, Technology, Tempe
     }
 
     try {
-        fetch('http://divinity-java-backend-production.up.railway.app/Admin/Deities', {
+        fetch('https://divinity-java-backend-production.up.railway.app/Admin/Deities', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
