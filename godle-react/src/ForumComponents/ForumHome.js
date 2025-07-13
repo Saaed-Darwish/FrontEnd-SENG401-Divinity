@@ -27,7 +27,7 @@ const Forum = (user) => {
         } catch (error) {
             console.error('Error fetching threads:', error);
         }
-        fetch('https://divinity-java-backend-production.up.railway.app/IsUserMatched', {
+        fetch('http://divinity-java-backend-production.up.railway.app/IsUserMatched', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

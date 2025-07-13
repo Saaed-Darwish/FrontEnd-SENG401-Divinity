@@ -1,7 +1,7 @@
 import JSZip from 'jszip';
 
 export function getDeitiesData() {
-    return fetch('https://divinity-java-backend-production.up.railway.app/Admin/Deities')
+    return fetch('http://divinity-java-backend-production.up.railway.app/Admin/Deities')
         .then(response => {
             if (response.ok) {
                 return response.blob(); // Get response body as blob
@@ -73,7 +73,7 @@ export function getDeitiesData() {
 }
 
 export function getCalendarData(){
-    return fetch('https://divinity-java-backend-production.up.railway.app/Admin/Calendar') 
+    return fetch('http://divinity-java-backend-production.up.railway.app/Admin/Calendar') 
         .then(response => {
             if (response.ok) {
                 return response.json(); // Return the JSON parsing promise
@@ -98,7 +98,7 @@ export function getCalendarData(){
 }
 
 export function getUsersData(){
-    return fetch('https://divinity-java-backend-production.up.railway.app/Admin/Users') 
+    return fetch('http://divinity-java-backend-production.up.railway.app/Admin/Users') 
         .then(response => {
             if (response.ok) {
                 return response.json(); // Return the JSON parsing promise
@@ -123,7 +123,7 @@ export function getUsersData(){
 }
 
 export function getForumData(){
-    return fetch('https://divinity-java-backend-production.up.railway.app/Admin/Forum') 
+    return fetch('http://divinity-java-backend-production.up.railway.app/Admin/Forum') 
         .then(response => {
             if (response.ok) {
                 return response.json(); // Return the JSON parsing promise
