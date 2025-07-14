@@ -17,7 +17,7 @@ const LandingPage = ({deity}) => {
         <><div style={{}}>
             <div style={{marginLeft:"10%",width: '60%', // Position the name absolutely
          // Place it at the vertical center
-            left: "22%",}}>
+            left: "22%",}}> <a href="https://saaeddarwish.netlify.app/">Back to Portfolio</a>
                  <div style={{ justifyContent:'center',textAlign: 'left',
         marginRight: '10%', marginTop: '5%', width:"60%" }}>
             <h1 style={{ textAlign:"left",color:"#5500e7f", fontWeight: 'bold', fontFamily: "Helvetica, sans-serif" }}>Embark on a Journey of <br/>Self-Discovery</h1>
