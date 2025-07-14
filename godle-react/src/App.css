@@ -654,21 +654,41 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body {
     font-size: 90%;
   }
 
+  .horizontal-slider {
+    width: 80%;
+  }
+
   .titleContainer {
-    font-size: 50px; /* reduce from 100px */
+    font-size: 50px;
+    /* reduce from 100px */
   }
 
   .deity-profile-name {
-    font-size: 40px; /* reduce from 77px */
+    font-size: 40px;
+    /* reduce from 77px */
+  }
+
+  .deity-profile {
+    min-width: 1400px;
+  }
+
+  .deity-container {
+    min-width: 100%;
   }
 
   .deity-profile-description-title {
     font-size: 20px;
+  }
+
+  .terms-container {
+    width: 90%;
+    left: 5%;
+    font-size: small;
   }
 
   .submit-button,
