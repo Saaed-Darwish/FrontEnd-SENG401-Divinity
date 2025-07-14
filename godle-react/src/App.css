@@ -14,6 +14,32 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 90%;
+  }
+
+  .titleContainer {
+    font-size: 50px; /* reduce from 100px */
+  }
+
+  .deity-profile-name {
+    font-size: 40px; /* reduce from 77px */
+  }
+
+  .deity-profile-description-title {
+    font-size: 20px;
+  }
+
+  .submit-button,
+  .start-button,
+  .post-button,
+  .register-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
 body {
   color: white; /* Set the default text color for the entire page */
   font-family: 'Gowun Batang', serif;
