@@ -1,18 +1,31 @@
+
+const getWidth = () => {
+  const width = window.innerWidth;
+  if (width <= 700) return "100%"; // mobile
+  if (width <= 900) return "80%"; // tablet
+  return "700px"; // desktop
+};
+
+const getWidthImage = () => {
+
+}
+
 const cardStyles = {
   borderRadius: 15,
   background: "black",
-  width: "700px",
+  width: getWidth(),
   height: "500px",
   cursor: "pointer",
   userSelect: "none",
   display: "flex",
-  flexDirection: "row", 
+  flexDirection: "row",
   alignItems: "center",
-  justifyContent: "space-between", 
+  justifyContent: "space-between",
   color: "white",
-  padding: "20px", 
+  padding: "20px",
   // border: "2px solid white", 
-  marginTop: "30px"
+  marginTop: "30px",
+  maxWidth: "100vw"
 };
 
 const leftColumnStyles = {
@@ -25,12 +38,13 @@ const leftColumnStyles = {
   textAlign: "center", // Center text
   paddingBottom: "10px", // Add some padding to separate the line from content
   boxShadow: "0 0 10px 5px rgba(255, 255, 255, 0.5)", // Box shadow for glowing effect
-  background:"white",
-  color:"black"
+  background: "white",
+  color: "black"
 };
 
 const imageStyles = {
   maxWidth: "238px",
+  width: "98%",
   height: "400px",
   objectFit: "cover",
   border: "2px solid black"

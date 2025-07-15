@@ -130,7 +130,7 @@ const AppNavbar = ({ user, setUser, setDeity, deity, setIsAdmin, isAdmin }) => {
 
       <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="justify-content-end" style={{ width: "100%" }} navbar>
+        <Nav className="justify-content-end" style={{ width: "100%", textAlign: "right" }} navbar>
           {!isAdmin && (
             <>
               <NavbarBrand className='navlink' tag={Link} to="/">⌂ Home</NavbarBrand>

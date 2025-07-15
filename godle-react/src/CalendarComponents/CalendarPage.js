@@ -94,7 +94,7 @@ const CalendarPage = ({ deity, user }) => {
 
   return (<>
     { loadingCalendar ? <Loading /> : null }
-    <div style={{ display: "flex", width: "100%", height: "50vh", alignItems: "center", justifyContent: "center" }}>
+    <div style={{ display: "flex", width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }}>
       <Calendar
         onChange={setCurrentDate}
         value={currentDate}

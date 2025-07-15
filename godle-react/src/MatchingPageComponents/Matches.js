@@ -79,6 +79,7 @@ const Matches = ({ user, matchedDeities, setDeity }) => {
     alignItems: "center",
     height: "100vh",
     flexDirection: "column",
+    maxWidth: "100vw"
   };
 
   const cardsContainerStyle = {
